@@ -7,8 +7,6 @@
             <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
         </p>
         <p>{{ fullname }}</p>
-
-        <p @click="click">click</p>
     </div>
 </template>
 
@@ -25,11 +23,6 @@
         get fullname () {
             return `${this.firstname} ${this.lastname}`
         }
-
-        click () {
-            console.log(1)
-        }
-
         mounted () {
             console.log('mounted')
         }
